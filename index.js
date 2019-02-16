@@ -43,18 +43,18 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // var containsItem = false;
-  // for(let i = 0; i < cart.length; i++) {
-  //   if(cart[i].itemName === item) {
-  //     containsItem = true;
-  //     delete cart[item];
-  //   }
-  // }
-  // if(containsItem) {
-  //   return cart;
-  // } else {
-  //   return "That item is not in your cart."
-  // }
+  var containsItem = false;
+  for(let i = 0; i < cart.length; i++) {
+    if(cart[i].itemName === item) {
+      containsItem = true;
+      delete cart[item];
+    }
+  }
+  if(containsItem) {
+    return cart;
+  } else {
+    return "That item is not in your cart."
+  }
   
 }
 
